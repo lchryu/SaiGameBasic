@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class DamageSender : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected EnemyController enemyController;
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        this.enemyController = GetComponent<EnemyController>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         DamageReceiver damageReceiver = collision.GetComponent<DamageReceiver>();
         damageReceiver.Receive(1);
+
+        this.enemyController.despawner.Despawn();
+
+
         Debug.Log(collision.name);
     }
 }
