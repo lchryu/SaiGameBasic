@@ -374,8 +374,10 @@ GameObject:
   m_Component:
   - component: {fileID: 923410695}
   - component: {fileID: 923410696}
-  - component: {fileID: 923410697}
-  - component: {fileID: 923410698}
+  - component: {fileID: 923410700}
+  - component: {fileID: 923410699}
+  - component: {fileID: 923410701}
+  - component: {fileID: 923410702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -412,7 +414,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minions: []
   minionPrefab: {fileID: 1628251286}
---- !u!58 &923410697
+--- !u!114 &923410699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923410694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 224eb72ebf5925a4882c0bdb1c7416ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &923410700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923410694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01688703157773b4eacf8e5778695ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dameReceiver: {fileID: 0}
+  playerStatus: {fileID: 0}
+--- !u!58 &923410701
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,7 +475,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &923410698
+--- !u!114 &923410702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -456,7 +484,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 923410694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 931e7b58e8828e442acc6398d6f1d839, type: 3}
+  m_Script: {fileID: 11500000, guid: 13d8daa511d420e4b957fe63071932ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1533613285
@@ -472,7 +500,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -497,7 +525,7 @@ Transform:
   m_GameObject: {fileID: 1533613285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6980559, y: -1.3530579, z: 0.17774624}
+  m_LocalPosition: {x: 0.92, y: 6.19, z: 0.17774624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

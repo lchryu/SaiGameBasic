@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class DamageReceiver : MonoBehaviour
 {
-    protected int hp = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    protected int hp = 3;
+    public virtual bool IsDead() => this.hp <= 0;
+    
     public virtual void Receive(int damage)
     {
         this.hp -= damage;
