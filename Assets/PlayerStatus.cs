@@ -10,12 +10,6 @@ public class PlayerStatus : MonoBehaviour
         this.playerController = GetComponent<PlayerController>();
     }
 
-    private void Update()
-    {
-
-    }
-
-
     public virtual void Dead()
     {
         Debug.Log("Dead");
