@@ -12,14 +12,9 @@ public class PlayerStatus : MonoBehaviour
 
     private void Update()
     {
-        // this.CheckDead();
 
     }
 
-    protected virtual void CheckDead()
-    {
-        if (this.playerController.dameReceiver.IsDead()) this.Dead();
-    }
 
     public virtual void Dead()
     {
